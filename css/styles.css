@@ -1,0 +1,386 @@
+/************************
+Global Styles
+************************/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', 'Open Sans', sans-serif;
+	line-height: 1.5;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+
+/**************************
+ Main Header Styles
+**************************/ 
+.main-header {
+	padding: 1em;
+}
+
+.main-nav ul {
+	background-color: lightblue;
+	padding: 1em
+}
+
+.main-nav li {
+	background-color: white;
+	margin: 1em;
+	padding: 1em;
+	border-radius: 12px;
+}
+
+.main-nav li a {
+	display: block;
+}
+
+.name {
+	margin-top: 0;
+}
+
+.background {
+	margin: 3em auto;
+}
+
+.goals {
+	font-size: 1.5em;
+	font-family: 'Open Sans';
+	font-weight:  lighter;
+}
+
+
+
+
+
+
+/************************
+Main section 
+************************/
+
+.portfolio {
+	margin: 1em auto 3em;
+	padding: 0 1em;
+}
+
+.portfolio h2 {
+	font-family: 'Roboto';
+	font-weight: 400;
+}
+
+.headline-skills {
+	margin-top:  3em;
+	text-decoration: underline;
+}
+
+.main {
+	background-color: salmon;
+	padding-top: 2em;
+}
+
+#skills {
+	margin-bottom: 0;
+	padding-bottom: 1em
+}
+
+#main-portfolio {
+	text-decoration: underline;
+}
+
+.skill ul li {
+	margin-bottom: 1em;
+}
+
+
+
+
+
+/*************************
+Footer Styles
+*************************/
+
+.main-footer {
+	margin: 2em auto 3em;
+	width: 95%;
+}
+
+.footer-nav {
+	border-top: 1px solid grey;
+	margin-top: 4em
+}
+
+.footer-nav-list {
+	display: flex;
+	padding-top: 3em;
+}
+
+.hide {
+	display: none;
+}
+
+
+.contact {
+	text-align: center;
+	padding-top: 1em;
+}
+
+.footer-nav-2 {
+	display: flex;
+}
+
+.footer-nav-1 {
+	display: none;
+}
+
+.footer-name {
+	margin-right: auto;
+}
+
+.footer-nav-2 {
+	margin-top: 1.5em;
+}
+
+
+
+
+/************************
+Fluid Image Sizing
+************************/
+img {
+	max-width: 90%;
+}
+
+
+
+/************************
+Skills Section
+************************/
+.skill {
+	flex-grow: 1;
+	justify-content: space-around;
+}
+
+.skill-1 {
+	background-color: rgba(224,13,12,.7);
+	padding: 3em;
+}
+
+.skill-2 {
+	background-color: rgba(159,72,177,.7);
+	padding: 3em;
+}
+
+.skill-3 {
+	background-color: rgba(230,155,85,.7);
+	padding: 3em;
+}
+
+.skill-img {
+	width: 200px;
+	height: 200px;
+	/*align-self: flex-end;*/
+}
+
+
+
+
+
+
+/************************
+Anchor Link Styles
+************************/
+a:link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(0,0,0);
+	font-weight: bold;
+	transition: all 1.1s;
+}
+
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: rgb(212, 13, 13);
+	transform: scale(1.2);
+}
+
+
+
+
+
+
+
+/***************************
+MEDIA QUERIES : 768px
+***************************/
+
+@media (min-width: 768px) {
+	.main-header {
+		padding-bottom: 3em;
+	}
+
+	.nav-list {
+		display: flex;
+		justify-content: center;
+	}
+
+	.nav-button {
+		/*flex-grow: 1;*/
+		margin: 1em;
+	}
+
+	.background {
+		margin-top: 3em;
+	}
+
+	.profile-picture {
+		float: right;
+		margin-left: 1em;
+	}
+
+	.portfolio-work {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.portfolio {
+		flex: 1 384px;
+	}
+
+	.aside-skills {
+		margin: 0 auto;
+		display: flex;
+	}
+
+	.skill {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.skill-img {
+		margin: 0 auto;
+		align-self: flex-end;
+	}
+
+	.contact {
+		text-align: center;
+	}
+
+	#to-top {
+		display: none;
+	}
+
+
+	.footer-nav-list {
+		border-top: 1px solid grey;
+		display: flex;
+	}
+
+	.footer-nav-2 {
+		margin-right: auto;
+	}
+
+	.footer-nav-1 {
+		display: flex;
+		padding-top: 1em;
+		margin-top: 2em;
+		margin-right: -30px;
+	}
+
+	.footer-nav-1-li {
+		margin-right: 2em;
+	}
+
+	.hide {
+		display: inline-block;
+		align-self: center;
+	}
+
+	.right {
+		margin-right: 0
+	}
+
+	.footer-name {
+		margin-right: auto;
+	}
+
+}
+
+
+
+
+
+
+
+/***************************
+MEDIA QUERIES : 1024px
+***************************/
+
+@media (min-width: 1024px) {
+	.main-nav {
+		display: flex;
+		background-color: purple;
+	}
+
+	.portfolio-work {
+		display: flex;
+	}
+
+	.portfolio {
+		flex: 1 340px;
+	}
+
+	.name {
+		margin-right: auto;
+		margin-left: 1em;
+		align-self: center;
+		padding-top: .5em;
+	}
+
+	.nav-button {
+	}
+
+}
+
+@media (min-width: 1360px) {
+	.portfolio-work {
+		display: flex;
+	}
+
+	.portfolio {
+		flex: 1 453px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
